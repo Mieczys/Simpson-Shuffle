@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejemplo Clase</title>
+
+    <style>
+
+        #ambosBotones{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
+            font-size: 60px;
+            color: green;
+            text-align: center;
+
+        }
+
+        button{
+            background-color: green;
+            border-radius: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            height: 40px;
+            width: 150px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 15px;
+        }
+
+        p{
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+        #contenedor{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        #contenedor img{
+            margin: auto;
+        }
+
+        #nuevoContenedor{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+
+        #nuevoContenedor img{
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1> Últimas frases <br> de los Simpson</h1>
+
+    <div id="ambosBotones">
+        <button onclick="buscar()" id="reload">Shuffle <img src="https://img.icons8.com/clouds/35/000000/homer-simpson.png"/>
+        </button>    
+        <button onclick="masPersonajes()" id="masPersonajes">Más <img src="https://img.icons8.com/doodle/25/000000/homer-simpson.png"/>personajes</button>
+    </div>
+
+    <div id="contenedor"></div>
+    <div id="nuevoContenedor"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
